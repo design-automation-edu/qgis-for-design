@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "6"
+before_script:
+  - npm install gitbook-cli
+  - npm install gitbook-publish@latest
+script: 
+  - gitpub
+  - git branch
+  - git remote -v
+  - git config --global user.email "akshatamohanty@gmail.com"
+  - git config --global user.name "Akshata"
+  - git push --force "https://{USER_NAME}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}" gh-pages 
