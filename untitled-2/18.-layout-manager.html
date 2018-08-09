@@ -1,0 +1,588 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>18. Layout Manager · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="17.-categorise-polygon-feature-layer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    QGIS for Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction.html">
+            
+                <a href="../introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../untitled-1/">
+            
+                <a href="../untitled-1/">
+            
+                    
+                    Site Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../untitled-1/location-map.html">
+            
+                <a href="../untitled-1/location-map.html">
+            
+                    
+                    Location Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../untitled-1/site-map.html">
+            
+                <a href="../untitled-1/site-map.html">
+            
+                    
+                    Site Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../untitled-1/land-use-map.html">
+            
+                <a href="../untitled-1/land-use-map.html">
+            
+                    
+                    Land Use Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="loading-google-map-as-base-map.html">
+            
+                <a href="loading-google-map-as-base-map.html">
+            
+                    
+                    01. Loading Google Map as Base Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="obtaining-singapore-master-plan.html">
+            
+                <a href="obtaining-singapore-master-plan.html">
+            
+                    
+                    02. Obtain Singapore Master Plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="import-shapefile-into-qgis.html">
+            
+                <a href="import-shapefile-into-qgis.html">
+            
+                    
+                    03. Import Shapefile into QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="understanding-map-projections-crs-grs-and-prs.html">
+            
+                <a href="understanding-map-projections-crs-grs-and-prs.html">
+            
+                    
+                    04. Understanding CRS, GCS and PCS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="zoom-to-specified-long-lat.html">
+            
+                <a href="zoom-to-specified-long-lat.html">
+            
+                    
+                    05. Zoom to Specified Long/Lat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="merge-multiple-features-using-dissolve.html">
+            
+                <a href="merge-multiple-features-using-dissolve.html">
+            
+                    
+                    06. Merge Multiple Features Using Dissolve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="save-a-feature-layer.html">
+            
+                <a href="save-a-feature-layer.html">
+            
+                    
+                    07. Save a Feature Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="change-the-symbology-colour-opacity-etc.-of-a-feature-layer.html">
+            
+                <a href="change-the-symbology-colour-opacity-etc.-of-a-feature-layer.html">
+            
+                    
+                    08. Change the Colour and Opacity of a Polygon Feature Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="9.-export-map-as-image.html">
+            
+                <a href="9.-export-map-as-image.html">
+            
+                    
+                    09. Export Map as Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="10.-drawing-in-qgis.html">
+            
+                <a href="10.-drawing-in-qgis.html">
+            
+                    
+                    10. Drawing in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="11.-create-attribute.html">
+            
+                <a href="11.-create-attribute.html">
+            
+                    
+                    11. Create Attribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="12.-delete-attribute.html">
+            
+                <a href="12.-delete-attribute.html">
+            
+                    
+                    12. Delete Attribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="13.-turn-on-snapping.html">
+            
+                <a href="13.-turn-on-snapping.html">
+            
+                    
+                    13. Turn on Snapping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="14.-change-the-fill-of-a-polyline-feature.html">
+            
+                <a href="14.-change-the-fill-of-a-polyline-feature.html">
+            
+                    
+                    14. Change the Fill of a Polyline Feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="15.-label-features.html">
+            
+                <a href="15.-label-features.html">
+            
+                    
+                    15. Label Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="16.-clip-feature-layer.html">
+            
+                <a href="16.-clip-feature-layer.html">
+            
+                    
+                    16. Clip Feature Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="17.-categorise-polygon-feature-layer.html">
+            
+                <a href="17.-categorise-polygon-feature-layer.html">
+            
+                    
+                    17. Categorise Polygon Feature Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.18" data-path="18.-layout-manager.html">
+            
+                <a href="18.-layout-manager.html">
+            
+                    
+                    18. Layout Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >18. Layout Manager</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="18-layout-manager">18. Layout Manager</h1>
+<p><strong>1.) Click on Project -&gt; Layout Manager ...</strong></p>
+<p><img src="../assets/image%20%28100%29.png" alt=""></p>
+<p><strong>2.) Choose empty layout and click create.</strong></p>
+<p><img src="../assets/image%20%2870%29.png" alt=""></p>
+<p><strong>3.) Enter the name of the map and click OK.</strong></p>
+<p><img src="../assets/image%20%2875%29.png" alt=""></p>
+<p><strong>4.) The layout manager.</strong></p>
+<p><img src="../assets/image%20%28102%29.png" alt=""></p>
+<p><strong>5.) Right click on the canvas -&gt; Page Properties ... to make edits to the properties of the page.</strong></p>
+<p><img src="../assets/image%20%28108%29.png" alt=""></p>
+<p><strong>6.) You can change the page size etc. in this window.</strong></p>
+<p><img src="../assets/image%20%28133%29.png" alt=""></p>
+<p><strong>7.) Click on &quot;Add a New Map to the Layout&quot; icon.</strong></p>
+<p><img src="../assets/image%20%2893%29.png" alt=""></p>
+<p><strong>8.) Specify where and the extent of the map on the canvas.</strong></p>
+<p><img src="../assets/image%20%28118%29.png" alt=""></p>
+<p><strong>9.) You can adjust the map at the Item Properties window. For e.g. change the scale of the map.</strong></p>
+<p><img src="../assets/image%20%2829%29.png" alt=""></p>
+<p><strong>10.) Adds a scale bar to the canvas by clicking on the &quot;Adds a new Scale Bar to the Layout&quot; icon.</strong></p>
+<p><img src="../assets/image%20%2892%29.png" alt=""></p>
+<p><strong>11.) Specify where and the extent of the scale bar on the canvas.</strong></p>
+<p><img src="../assets/image%20%2830%29.png" alt=""></p>
+<p><strong>12.) You can make changes to the scale bar at the Item Properties window. For e.g. we can add a white background to the scale bar by ticking the Background parameter.</strong></p>
+<p><img src="../assets/image%20%2886%29.png" alt=""></p>
+<p><strong>13.) Adds the legend to the canvas by clicking on the &quot;add a new Legend to the layout&quot; icon.</strong></p>
+<p><img src="../assets/image%20%28113%29.png" alt=""></p>
+<p><strong>14.) Specify where and the extent of the legend.</strong></p>
+<p><img src="../assets/image%20%2881%29.png" alt=""></p>
+<p><strong>15.) You can make changes to the legend at the Item Properties window. For e.g. we can delete some of the legends that are not informative. Untick the Auto-update.</strong></p>
+<p><img src="../assets/image%20%28143%29.png" alt=""></p>
+<p><strong>16.) You can delete certain legends that are not useful. Select those legend and click on the minus icon to remove them.</strong></p>
+<p><img src="../assets/image%20%28124%29.png" alt=""></p>
+<p><strong>17.) The unwanted legend removed.</strong></p>
+<p><img src="../assets/image%20%2822%29.png" alt=""></p>
+<p><strong>18.) You can edit the name of the legend too. Select the legend you want to edit, and click on the edit button (beside the minus button).</strong></p>
+<p><img src="../assets/image%20%28136%29.png" alt=""></p>
+<p><strong>19.) The final map.</strong></p>
+<p><img src="../assets/image%20%2837%29.png" alt=""></p>
+<p><strong>20.) Go to Layout -&gt; Export as Image .... to export the map as an image.</strong></p>
+<p><img src="../assets/image%20%28106%29.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="17.-categorise-polygon-feature-layer.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 17. Categorise Polygon Feature Layer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"18. Layout Manager","level":"1.4.18","depth":2,"previous":{"title":"17. Categorise Polygon Feature Layer","level":"1.4.17","depth":2,"path":"untitled-2/17.-categorise-polygon-feature-layer.md","ref":"untitled-2/17.-categorise-polygon-feature-layer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"untitled-2/18.-layout-manager.md","mtime":"2018-08-09T08:02:51.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-09T08:04:33.117Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
